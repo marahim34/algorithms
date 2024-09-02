@@ -3,6 +3,7 @@ using namespace std;
 
 vector<int> v[1005];
 bool visit[1005];
+int level[1005];
 
 void bfs(int source)
 {
@@ -10,25 +11,21 @@ void bfs(int source)
     q.push(source);
     visit[source] = true;
 
+    level[source] = 0;
+
     while (!q.empty())
     {
         int par = q.front();
         q.pop();
         cout << par << endl;
 
-        // for (int i = 0; i < v[par].size(); i++)
-        // {
-        //     int child = v[par][i];
-        //     cout << child << endl;
-        // }
-
         for (int child : v[par])
         {
-            // cout << child << endl;
             if (visit[child] == false)
             {
                 q.push(child);
                 visit[child] = true;
+                level[child] = level[par] + 1;
             }
         }
     }
@@ -52,7 +49,13 @@ int main()
     cin >> source;
 
     memset(visit, false, sizeof(visit));
+    memset(level, -1, sizeof(level));
     bfs(source);
+
+    for (int i = 0; i < n; i++)
+    {
+        cout << i << " " << level[i] << endl;
+    }
 
     return 0;
 }
