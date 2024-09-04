@@ -1,0 +1,11 @@
+Depth First Search
+
+DFS, or Depth First Search, is a way to explore or search through a graph or tree. Here's how it works in simple terms:
+
+Start at the Beginning: Pick a starting point, usually called the root or the first node.
+
+Go as Far as You Can: Move from the current node to one of its connected nodes (like following a path) and keep going until you can't go any further.
+
+Backtrack: If you reach a point where you can't move forward (no more unvisited connections), go back to the last place where there were other paths you haven't tried yet.
+
+Repeat: Continue this process until you've visited every node.
