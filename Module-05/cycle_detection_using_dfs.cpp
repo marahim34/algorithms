@@ -7,32 +7,21 @@ vector<int> adj[N];
 int parentArray[N];
 bool ans;
 
-void bfs(int src)
+void dfs(int parent)
 {
-    queue<int> q;
-    q.push(src);
+    vis[parent] = true;
+    // cout << parent << endl;
 
-    vis[src] = true;
-    while (!q.empty())
+    for (int child : adj[parent])
     {
-        int parent = q.front();
-        q.pop();
-
-        // cout << parent << endl;
-
-        for (int child : adj[parent])
+        if (vis[child] == true && child != parentArray[parent])
         {
-            if (vis[child] && parentArray[parent] != child)
-            {
-                ans = true;
-            }
-
-            if (!vis[child])
-            {
-                vis[child] = true;
-                parentArray[child] = parent;
-                q.push(child);
-            }
+            ans = true;
+        }
+        if (vis[child] == false)
+        {
+            parentArray[child] = parent;
+            dfs(child);
         }
     }
 }
@@ -59,9 +48,14 @@ int main()
     {
         if (!vis[i])
         {
-            bfs(i);
+            dfs(i);
         }
     }
+
+    // for (int i = 0; i < n; i++)
+    // {
+    //     cout << parentArray[i] << " ";
+    // }
 
     if (ans == true)
     {
