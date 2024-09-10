@@ -1,0 +1,18 @@
+Dijkstra Algorithm (ডায়াক্স্টা)
+Dijkstra's Algorithm is used to find the shortest path from a starting node to all other nodes in a weighted graph, where all edge weights are non-negative. It can be seen as an extension of Breadth-First Search (BFS), but while BFS works well for unweighted graphs, it doesn't handle weighted graphs efficiently. This is where Dijkstra's Algorithm comes in.
+
+
+Versions of Dijkstra's Algorithm:
+Naive version: This uses simple data structures like arrays and typically runs in O(V²) time, where V is the number of vertices.
+
+Optimized version: By using a priority queue (commonly implemented with a min-heap), the time complexity improves to O((V + E) log V), where E is the number of edges.
+
+
+Path relaxation:
+n the context of C++ and algorithms like Dijkstra's or Bellman-Ford, path relaxation refers to the process of improving the estimate of the shortest path to a node by checking if a shorter path can be found through a different node.
+
+if (dis[A] + x < dis[B]){
+    dis[B] = dis[A] + x
+}
+
+- Single source shortest path algorithms
