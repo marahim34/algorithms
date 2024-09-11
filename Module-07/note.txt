@@ -1,0 +1,30 @@
+Bellman-Ford Algorithm:
+The Bellman-Ford algorithm is used to compute the shortest paths from a single source vertex to all other vertices in a weighted graph. It is particularly useful for graphs that have negative weight edges, where algorithms like Dijkstra's algorithm fail.
+
+Key points:
+- Single-source shortest path: The algorithm finds the shortest path from a single source node to every other node.
+- Works with negative weights: Unlike Dijkstra’s algorithm, Bellman-Ford can handle graphs with negative edge weights. However, if there is a negative weight cycle, the algorithm detects it.
+- Time Complexity: 𝑂(𝑉⋅𝐸), where V is the number of vertices and 𝐸 is the number of edges.
+
+REMEMBER: IF there is NEGATIVE WEIGHT CYCLE, it cannot be solved with Dijkstra Algorithm. In that case you need to solve the issue with Bellman-Ford Algorithm.
+Dijkstra can work negative value but it can not handle if the all values (meaning the cycle) are negative.
+
+
+Bellman-Ford works with the edge. 
+
+The Bellman-Ford algorithm guarantees finding the shortest distance to any node that can be reached from the starting point using up to K edges (or hops).
+
+In the Bellman-Ford algorithm, path relaxation is a key step. The idea behind path relaxation is to gradually find shorter paths by improving the estimated distances between nodes.
+
+
+
+Floyd-Warshall Algorithm
+The The Floyd-Warshall algorithm is an all-pairs shortest path algorithm. It computes the shortest paths between every pair of vertices in a weighted graph. Unlike Bellman-Ford, which deals with a single source, Floyd-Warshall handles multiple sources efficiently.
+
+Key Points:
+All-pairs shortest paths: It calculates the shortest paths between every pair of vertices.
+Handles negative weights: Like Bellman-Ford, Floyd-Warshall can deal with negative edge weights but cannot handle negative weight cycles (it will produce incorrect results if such cycles exist).
+Dynamic Programming approach: The algorithm is based on dynamic programming to build solutions from smaller subproblems.
+Time Complexity: 
+𝑂(𝑉^3), where V is the number of vertices. This can be a drawback for very large graphs but is still useful for moderate-sized graphs.
+Space Complexity: 𝑂(𝑉^2).
