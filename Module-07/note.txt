@@ -22,6 +22,23 @@ In the Bellman-Ford algorithm, path relaxation is a key step. The idea behind pa
     3. After these rounds, the shortest path to each node is guaranteed to be found.
 
 
+### BFS Dijktra Bellman-Ford all are known as algorithm for SINGLE SOURCE SHORTEST PATH.
+
+### Floyd-Warshall Algorithm is all-pair path algorithm;
+
+Algorithm       | Use When                                                                                           | Handles Negative Weights? | Best For                                                       | Time Complexity
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+BFS             | Unweighted graphs (or equal weight edges); shortest path in terms of number of edges               | No                        | Shortest path in unweighted graphs                             | O(V + E)
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+DFS             | Exploring all nodes or paths, detecting cycles, topological sorting, finding connected components  | No                        | Deep exploration, cycle detection, topological sort, SCCs      | O(V + E)
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Dijkstra        | Weighted graphs with non-negative weights; shortest path from single source                        | No                        | Single-source shortest path in non-negative weight graphs      | O((V + E) log V) with a priority queue
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Bellman-Ford    | Weighted graphs with negative weights; detecting negative weight cycles; shortest path from source | Yes                       | Handling negative weights, detecting negative-weight cycles    | O(V * E)
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Floyd-Warshall  | All-pairs shortest path, small/dense graphs; handles negative weights                              | Yes                       | All-pairs shortest path, dense graphs                          | O(V³)
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 
 Floyd-Warshall Algorithm
 The The Floyd-Warshall algorithm is an all-pairs shortest path algorithm. It computes the shortest paths between every pair of vertices in a weighted graph. Unlike Bellman-Ford, which deals with a single source, Floyd-Warshall handles multiple sources efficiently.
@@ -33,3 +50,24 @@ Dynamic Programming approach: The algorithm is based on dynamic programming to b
 Time Complexity: 
 𝑂(𝑉^3), where V is the number of vertices. This can be a drawback for very large graphs but is still useful for moderate-sized graphs.
 Space Complexity: 𝑂(𝑉^2).
+
+
+The theme of the Floyd-Warshall algorithm is based on finding shorter paths between two nodes by considering whether passing through a third node offers a shorter route.
+
+Concept of Floyd-Warshall:
+For every pair of nodes (i, j), the algorithm checks if there is a shorter path between them by passing through an intermediate node k. The distance is updated as:
+
+dist[i][j]=min(dist[i][j],dist[i][k]+dist[k][j])
+
+Theme:
+Indirect Routes: Instead of relying only on direct connections between two nodes, the algorithm evaluates whether going through a third node provides a shorter path.
+
+Iterative Process: The algorithm introduces each node k as an intermediate step to update the shortest paths for all pairs of nodes.
+
+Example:
+Consider three nodes A, B, and C with the following distances:
+
+A to B = 3
+B to C = 2
+A to C = 8
+Initially, the direct path from A to C is 8. By applying Floyd-Warshall, the algorithm evaluates the indirect path A to B to C, which gives a total distance of 5 (A to B = 3, B to C = 2). Since 5 is shorter than 8, the distance from A to C is updated to 5.
