@@ -38,7 +38,9 @@ int main()
 
     dis[0] = 0;
 
-    for (int i = 0; i < n; i++)
+    // Update the distance
+
+    for (int i = 0; i < n - 1; i++)
     {
         for (Edge ed : edgeList)
         {
@@ -56,9 +58,35 @@ int main()
         }
     }
 
-    for (int i = 0; i < n; i++)
+    // Detection of Cycle
+    bool cycle = false;
+
+    for (Edge ed : edgeList)
     {
-        cout << i << " --> " << dis[i] << endl;
+        // cout << ed.u << " " << ed.v << " " << ed.c << endl;
+        int u, v, c;
+
+        u = ed.u;
+        v = ed.v;
+        c = ed.c;
+
+        if (dis[u] < INT_MAX && dis[u] + c < dis[v])
+        {
+            cycle = true;
+            break;
+        }
+    }
+
+    if (cycle)
+    {
+        cout << "Cycle exists, No answer" << endl;
+    }
+    else
+    {
+        for (int i = 0; i < n; i++)
+        {
+            cout << i << " --> " << dis[i] << endl;
+        }
     }
 
     return 0;

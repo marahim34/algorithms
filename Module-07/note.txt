@@ -14,7 +14,12 @@ Bellman-Ford works with the edge.
 
 The Bellman-Ford algorithm guarantees finding the shortest distance to any node that can be reached from the starting point using up to K edges (or hops).
 
+###
 In the Bellman-Ford algorithm, path relaxation is a key step. The idea behind path relaxation is to gradually find shorter paths by improving the estimated distances between nodes.
+
+    1. For every edge, we check if using that edge gives us a shorter path to the destination node. If it does, we update the distance.
+    2. We repeat this process for all edges V - 1 times (where V is the number of nodes). This ensures we find the shortest paths for all nodes.
+    3. After these rounds, the shortest path to each node is guaranteed to be found.
 
 
 
