@@ -1,0 +1,45 @@
+A graph in C++ is a data structure used to represent a collection of objects (called vertices or nodes) and the connections (edges) between them. 
+
+There are several common ways to represent graphs in C++, specifically the following three:
+
+a. Adjacency Matrix: An adjacency matrix is a 2D array where each cell [i][j] indicates the presence (and sometimes weight) of an edge between vertex i and vertex j.
+b. Adjacency List: An adjacency list represents the graph as an array of lists. Each index corresponds to a vertex, and the list at that index contains all the adjacent vertices.
+c. An edge list is a list of all edges, where each edge is represented as a pair of vertices.
+
+When to use Matrix, when to use Adjacency List and when to use Edge List?
+
+Representation   | Best When...                         | Not Ideal When...
+-----------------|--------------------------------------|------------------------------
+Adjacency Matrix | - Small or dense graphs              | - Large or sparse graphs
+                 | - Need fast edge checks (O(1))       | - Limited memory
+-----------------|--------------------------------------|------------------------------
+Adjacency List   | - Large and sparse graphs            | - Need very fast edge checks
+                 | - Need to traverse neighbors         |   between any nodes
+-----------------|--------------------------------------|------------------------------
+Edge List        | - Very sparse graphs                 | - Need fast neighbor lookups
+                 | - Simple storage needed              | - Frequent edge existence checks
+                 | - Edge-focused algorithms            |
+
+
+Adjacency Matrix: 
+    Scope: 
+        1. Directed
+        2. Undirected
+        3. Weighted
+    
+    Graph Type       | Representation in Adjacency Matrix
+-----------------|--------------------------------------
+Directed         | - Non-symmetric matrix
+                 | - adjMatrix[i][j] = 1 if edge i -> j
+                 | - adjMatrix[i][j] = 0 if no edge
+-----------------|--------------------------------------
+Undirected       | - Symmetric matrix
+                 | - adjMatrix[i][j] = adjMatrix[j][i]
+                 | - adjMatrix[i][j] = 1 if edge exists
+-----------------|--------------------------------------
+Weighted         | - Matrix stores weights
+                 | - adjMatrix[i][j] = weight of edge
+                 | - Use special value (e.g., INF) for no edge
+
+
+Adjacency List:
