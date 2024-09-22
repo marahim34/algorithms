@@ -43,3 +43,36 @@ Weighted         | - Matrix stores weights
 
 
 Adjacency List:
+Each node in the graph has a list that contains all the nodes it is directly connected to (its neighbors). This representation is efficient in terms of memory usage for sparse graphs—graphs where the number of edges is much less than the maximum possible.
+
+    Scope:
+        Directed Graphs
+        Undirected Graphs
+        Weighted Graphs
+
+Graph Type       | Representation in Adjacency List
+-----------------|--------------------------------------------
+Directed         | - Each node's list contains nodes it points to
+                 | - Edge from u to v: adjList[u] contains v
+-----------------|--------------------------------------------
+Undirected       | - Each node's list contains all connected nodes
+                 | - Edge between u and v: adjList[u] contains v
+                 |                         adjList[v] contains u
+-----------------|--------------------------------------------
+Weighted         | - Each node's list contains pairs (neighbor, weight)
+                 | - Edge with weight w: adjList[u] contains (v, w)
+
+Edge List: consists of a list (or array) of all the edges in the graph, where each edge is represented by the pair (or tuple) of nodes it connects. This representation can also include weights if the graph is weighted.
+
+Graph Type       | Representation in Edge List
+-----------------|--------------------------------------------
+Directed         | - List of pairs (u, v)
+                 | - Each pair represents an edge from u to v
+-----------------|--------------------------------------------
+Undirected       | - List of pairs (u, v)
+                 | - Each pair represents an undirected edge
+                 | - Edge between u and v stored once
+-----------------|--------------------------------------------
+Weighted         | - List of triplets (u, v, w)
+                 | - Each triplet includes the weight w
+                 | - For undirected graphs, edge stored once
