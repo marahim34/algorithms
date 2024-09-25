@@ -1,2 +1,6 @@
-   // p.first = 10;
-    // p.second = 20;
+for (int x : v[0])
+    {
+        cout << x << " ";
+    }
+
+    cout << endl;

@@ -24,10 +24,10 @@ int main()
 
     cout << endl;
 
-    for (int i = 0; i < v[0].size(); i++)
-    {
-        cout << v[0][i] << " ";
-    }
+    // for (int i = 0; i < v[0].size(); i++)
+    // {
+    //     cout << v[0][i] << " ";
+    // }
 
     return 0;
 }

@@ -1,0 +1,251 @@
+[33mcommit 41d4502a6c42339c3a480afba176d3c2ebe1f332[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m)[m
+Author: Md Abdur Rahim <98558957+marahim34@users.noreply.github.com>
+Date:   Thu Sep 26 01:25:05 2024 +0300
+
+    bfs
+
+[33mcommit 853f02e3b88aa8558b5c806367575cc5f33cf511[m
+Author: Md Abdur Rahim <98558957+marahim34@users.noreply.github.com>
+Date:   Thu Sep 26 01:15:31 2024 +0300
+
+    bfs implemented in ices problemset message route
+
+[33mcommit 7cbf94df823a8a8a4d4222482abc03bb7ef20f76[m
+Author: Md Abdur Rahim <98558957+marahim34@users.noreply.github.com>
+Date:   Thu Sep 26 01:08:27 2024 +0300
+
+    message route/csec problemset
+
+[33mcommit 08e87b853fcfc08e61d0874e5dc759f804fa5365[m
+Author: Md Abdur Rahim <98558957+marahim34@users.noreply.github.com>
+Date:   Wed Sep 25 14:18:25 2024 +0300
+
+    building roads
+
+[33mcommit 4f91a3a2d8af326b01209eb0726f20aff9039f3f[m[33m ([m[1;31morigin/main[m[33m)[m
+Author: Md Abdur Rahim <98558957+marahim34@users.noreply.github.com>
+Date:   Wed Sep 25 10:18:57 2024 +0300
+
+    dijkstra
+
+[33mcommit 22fdd9f96d1ef5abddaf1e6171c3ebab1830479e[m
+Author: Md Abdur Rahim <98558957+marahim34@users.noreply.github.com>
+Date:   Wed Sep 25 08:53:26 2024 +0300
+
+    inimum cost calculation using minimum spanning tree through kruskal's algo
+
+[33mcommit 33b9944bf08e9e6337cb1dd2bb260a32d32862c8[m
+Author: Md Abdur Rahim <98558957+marahim34@users.noreply.github.com>
+Date:   Tue Sep 24 23:12:01 2024 +0300
+
+    Romeo and Juliet problem with BFS
+
+[33mcommit 76cdd450907d32b372faad675573aa2c142833c5[m
+Author: Md Abdur Rahim <98558957+marahim34@users.noreply.github.com>
+Date:   Mon Sep 23 01:13:44 2024 +0300
+
+    adj list to edge list
+
+[33mcommit 7b117d320550f435ed774c55f6e6f122f20c11d3[m
+Author: Md Abdur Rahim <98558957+marahim34@users.noreply.github.com>
+Date:   Mon Sep 23 00:45:05 2024 +0300
+
+    matrix to edge list and edge to adj list
+
+[33mcommit cc088df9fcb0cb5509996bfbbe54770acef215d3[m
+Author: Md Abdur Rahim <98558957+marahim34@users.noreply.github.com>
+Date:   Mon Sep 23 00:05:01 2024 +0300
+
+    matrix to adj list
+
+[33mcommit 87d23a13d36074fb8db26147e4464ffadd22e742[m
+Author: Md Abdur Rahim <98558957+marahim34@users.noreply.github.com>
+Date:   Sun Sep 22 23:30:19 2024 +0300
+
+    edge to matrix
+
+[33mcommit 983d4525fbdf9a5573e67e06f380bd82f1799595[m
+Author: Md Abdur Rahim <98558957+marahim34@users.noreply.github.com>
+Date:   Sun Sep 22 13:45:00 2024 +0300
+
+    adj list to adj matrix with weight
+
+[33mcommit b7892b7a7844629f7bef46b27611384a6dd3273b[m
+Author: Md Abdur Rahim <98558957+marahim34@users.noreply.github.com>
+Date:   Sun Sep 22 13:04:49 2024 +0300
+
+    adj list to adj matrix
+
+[33mcommit a07acef434131dfdfddb10cc8a3083dc67ce42aa[m
+Author: Md Abdur Rahim <98558957+marahim34@users.noreply.github.com>
+Date:   Sun Sep 22 12:03:27 2024 +0300
+
+    Recap of matrix, ad list and edge list
+
+[33mcommit 296bd6f03a0c59d1256500d5e1c34f382e3b550d[m
+Author: Md Abdur Rahim <98558957+marahim34@users.noreply.github.com>
+Date:   Fri Sep 20 23:31:58 2024 +0300
+
+    kruskal algorithm
+
+[33mcommit 25dd016234558b15a7a23deadcbd166beaaa44e0[m
+Author: Md Abdur Rahim <98558957+marahim34@users.noreply.github.com>
+Date:   Thu Sep 19 23:44:42 2024 +0300
+
+    cycle detection using DSU in undirected graph
+
+[33mcommit f535f9d6017d2240d2444a548d1241614b121b80[m
+Author: Md Abdur Rahim <98558957+marahim34@users.noreply.github.com>
+Date:   Wed Sep 18 10:53:38 2024 +0300
+
+    union by level
+
+[33mcommit 2e7267d86356fd3baa43c7ee91e3b5b64eb03754[m
+Author: Md Abdur Rahim <98558957+marahim34@users.noreply.github.com>
+Date:   Wed Sep 18 10:29:56 2024 +0300
+
+    union operation
+
+[33mcommit 55f77b19d1aa65932bb301fb40222accfa0add96[m
+Author: Md Abdur Rahim <98558957+marahim34@users.noreply.github.com>
+Date:   Wed Sep 18 09:21:33 2024 +0300
+
+    find operation
+
+[33mcommit 80dda0285d99ce3930c2d0cbf4b9fcd2f25badb9[m
+Author: Md Abdur Rahim <98558957+marahim34@users.noreply.github.com>
+Date:   Tue Sep 17 09:13:17 2024 +0300
+
+    count sub islands
+
+[33mcommit 8ee2f48e31ebfdba6b4036faa77af04d90efecec[m
+Author: Md Abdur Rahim <98558957+marahim34@users.noreply.github.com>
+Date:   Tue Sep 17 09:12:27 2024 +0300
+
+    number of islands
+
+[33mcommit c6af07930ea5f04348ddfb49882c3daedfb54f5e[m
+Author: Md Abdur Rahim <98558957+marahim34@users.noreply.github.com>
+Date:   Mon Sep 16 01:12:13 2024 +0300
+
+    leetcode problems
+
+[33mcommit 7456c07f16f2e5755e9f946e36128893c3a58b90[m
+Author: Md Abdur Rahim <98558957+marahim34@users.noreply.github.com>
+Date:   Mon Sep 16 00:46:39 2024 +0300
+
+    path exists problem
+
+[33mcommit f8dfb9f5a50a30c9cae4dc7e1535788663e82e13[m
+Author: Md Abdur Rahim <98558957+marahim34@users.noreply.github.com>
+Date:   Thu Sep 12 11:20:51 2024 +0300
+
+    floyd warshall algorithm
+
+[33mcommit 620d1f15b974dbf0302de891e4eb81b4d397bfc7[m
+Author: Md Abdur Rahim <98558957+marahim34@users.noreply.github.com>
+Date:   Thu Sep 12 09:19:08 2024 +0300
+
+    belmond-ford(both directed and undirected) implementation
+
+[33mcommit d3a1e6fce685f9163476980a93a20473fe9756bb[m
+Author: Md Abdur Rahim <98558957+marahim34@users.noreply.github.com>
+Date:   Wed Sep 11 23:46:58 2024 +0300
+
+    Bellman-ford ideas
+
+[33mcommit 987ebb4785028b007b1933ce03961ba395ceb07f[m
+Author: Md Abdur Rahim <98558957+marahim34@users.noreply.github.com>
+Date:   Tue Sep 10 09:42:15 2024 +0300
+
+    dijktra optimized
+
+[33mcommit dc92f8de9262122c3794e76f81741c6de426dc87[m
+Author: Md Abdur Rahim <98558957+marahim34@users.noreply.github.com>
+Date:   Tue Sep 10 09:31:52 2024 +0300
+
+    diajktra naive and optimized
+
+[33mcommit 8fb826a46ed6f35553428482eec2a2292cad04ef[m
+Author: Md Abdur Rahim <98558957+marahim34@users.noreply.github.com>
+Date:   Sun Sep 8 12:28:15 2024 +0300
+
+    Cycle detection in directed graph using dfs
+
+[33mcommit 0f2bdaa6a0f1b5ded4a9e74d280c3f90e7262279[m
+Author: Md Abdur Rahim <98558957+marahim34@users.noreply.github.com>
+Date:   Sun Sep 8 11:30:23 2024 +0300
+
+    cycle detection with dfs
+
+[33mcommit 8d9bf05b6596c2f8f29d00a24f6791d834bed3c1[m
+Author: Md Abdur Rahim <98558957+marahim34@users.noreply.github.com>
+Date:   Sun Sep 8 09:53:06 2024 +0300
+
+    Cycle detection using bfs
+
+[33mcommit 134b7c5755f5258b6b6fbaf704302a69c369db3b[m
+Author: Md Abdur Rahim <98558957+marahim34@users.noreply.github.com>
+Date:   Thu Sep 5 09:23:53 2024 +0300
+
+    component count
+
+[33mcommit 9ef35bf1d68453da640dc01d6815967b861647f4[m
+Author: Md Abdur Rahim <98558957+marahim34@users.noreply.github.com>
+Date:   Thu Sep 5 08:54:14 2024 +0300
+
+    dfs on 2D
+
+[33mcommit 7adf70d540fd66d636b9b22fcccf5cc49ee65fbc[m
+Author: Md Abdur Rahim <98558957+marahim34@users.noreply.github.com>
+Date:   Wed Sep 4 23:58:55 2024 +0300
+
+    dfs 2d
+
+[33mcommit edcb1e4736f6eb88686b3e0550f356ace2adc67c[m
+Author: Md Abdur Rahim <98558957+marahim34@users.noreply.github.com>
+Date:   Wed Sep 4 11:13:34 2024 +0300
+
+    dfs traversing
+
+[33mcommit 9e2c3f665274c281cd802d59fc918eb95fec1eee[m
+Author: Md Abdur Rahim <98558957+marahim34@users.noreply.github.com>
+Date:   Tue Sep 3 08:15:57 2024 +0300
+
+    practice
+
+[33mcommit 13cd5cd6f5d433d5aeb645742269843a38801961[m
+Author: Md Abdur Rahim <98558957+marahim34@users.noreply.github.com>
+Date:   Mon Sep 2 14:57:08 2024 +0300
+
+    bfs with level print
+
+[33mcommit 49cfaa8a3ce2df5b3ca77c424826937c0b1cfbb8[m
+Author: Md Abdur Rahim <98558957+marahim34@users.noreply.github.com>
+Date:   Mon Sep 2 08:57:47 2024 +0300
+
+    bfs traversal with level
+
+[33mcommit 49976d02df69d7e2335ca7fa32aad7985b9aba8a[m
+Author: Md Abdur Rahim <98558957+marahim34@users.noreply.github.com>
+Date:   Mon Sep 2 08:31:08 2024 +0300
+
+    bfs traversal
+
+[33mcommit c78647983345d7f5fe7c8104c8ecc34b784c8bd6[m
+Author: Md Abdur Rahim <98558957+marahim34@users.noreply.github.com>
+Date:   Sun Sep 1 23:56:23 2024 +0300
+
+    updated
+
+[33mcommit b8f930298b7f828ba03be0c3ecbb01763dccc6b1[m
+Author: Md Abdur Rahim <98558957+marahim34@users.noreply.github.com>
+Date:   Sun Sep 1 23:51:21 2024 +0300
+
+    update
+
+[33mcommit d06e0ae1d9501c3b4c106f2d12596d647b3a4cff[m
+Author: Md Abdur Rahim <98558957+marahim34@users.noreply.github.com>
+Date:   Sun Sep 1 23:49:15 2024 +0300
+
+  

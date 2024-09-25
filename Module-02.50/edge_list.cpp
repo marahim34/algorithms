@@ -6,20 +6,19 @@ int main()
     int n, e;
     cin >> n >> e;
 
-    vector<int> v[n];
+    vector<pair<int, int>> v;
 
     while (e--)
     {
         int a, b;
         cin >> a >> b;
 
-        v[a].push_back(b);
-        v[b].push_back(a);
+        v.push_back({a, b});
     }
 
-    for (int val : v[1])
+    for (int i = 0; i < n; i++)
     {
-        cout << val << " ";
+        cout << v[i].first << " " << v[i].second << endl;
     }
     return 0;
 }

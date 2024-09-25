@@ -10,6 +10,7 @@ bool ans;
 void dfs(int parent)
 {
     vis[parent] = true;
+    pathVisit[parent] = true;
 
     // cout << parent << " ";
 
