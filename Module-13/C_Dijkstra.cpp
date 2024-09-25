@@ -69,7 +69,7 @@ int main()
 
     dijkstra(1);
 
-    if (dis[n] == -1)
+    if (dis[n] == 1e18)
     {
         cout << -1 << endl;
     }
