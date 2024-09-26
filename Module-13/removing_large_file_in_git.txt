@@ -1,0 +1,40 @@
+rStep-by-Step Code
+Download BFG Repo-Cleaner (only if you haven't already):
+
+bash
+Copy code
+curl https://repo1.maven.org/maven2/com/madgag/bfg/1.13.0/bfg-1.13.0.jar > bfg.jar
+Clone your repository (if you're not already inside it):
+
+bash
+Copy code
+git clone https://github.com/yourusername/yourrepo.git
+cd yourrepo
+Remove the large file (output.txt) from the Git history using BFG:
+
+bash
+Copy code
+java -jar ~/bfg.jar --delete-files 'output.txt'
+Run Git Garbage Collection to clean up the repository and remove any leftover references:
+
+bash
+Copy code
+git reflog expire --expire=now --all
+git gc --prune=now --aggressive
+Force push the cleaned repository to GitHub to update the remote repository:
+
+
+git push origin main --force
+Notes:
+Replace output.txt with the name of the file you want to remove, if it's different.
+Ensure to replace https://github.com/yourusername/yourrepo.git with your actual repository URL.
+Summary of Commands:
+bash
+Copy code
+curl https://repo1.maven.org/maven2/com/madgag/bfg/1.13.0/bfg-1.13.0.jar > bfg.jar
+git clone https://github.com/yourusername/yourrepo.git
+cd yourrepo
+java -jar ~/bfg.jar --delete-files 'output.txt'
+git reflog expire --expire=now --all
+git gc --prune=now --aggressive
+git push origin main --force
