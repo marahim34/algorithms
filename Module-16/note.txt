@@ -1,0 +1,25 @@
+Dynamic Programming *DP*
+Dynamic Programming (DP) is an optimization technique used to solve complex problems by breaking them down into simpler subproblems. The main idea behind DP is to avoid solving the same subproblem multiple times by storing the results of solved subproblems in a table, allowing the solution to be reused when the same subproblem occurs again.
+
+DP is a technique
+It is a combination of a recursive solution which is optimized.
+
+Dynamic Programming = Recursive Solution + Optimization.
+
+It works by solving a complex problem by breaking it down into simpler, smaller subproblems and then storing the results of these subproblems to avoid solving them repeatedly. 
+
+- Breaking the problem into subproblems.
+- Solving each subproblem only once.
+- Storing the solutions of subproblems for later use.
+
+Recursion + Memoizatoin : This technique involves solving the problem recursively and storing the results of subproblems in a table (memo). When a subproblem is encountered again, the stored result is used instead of recomputing it.
+
+
+Fibonacci Series
+The Fibonacci series is a sequence of numbers in which each number is the sum of the two preceding ones, usually starting with 0 and 1. The Fibonacci series is defined as:
+
+F(0)=0, F(1)=1
+F(n)=F(n−1)+F(n−2) for n>1
+
+
+
