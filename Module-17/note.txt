@@ -1,0 +1,11 @@
+Knapsack
+(defined in the following ways in geeksforgeeks.org)
+The Knapsack problem is an example of the combinational optimization problem. This problem is also commonly known as the “Rucksack Problem“. The name of the problem is defined from the maximization problem as mentioned below:
+
+Given a bag with maximum weight capacity of W and a set of items, each having a weight and a value associated with it. Decide the number of each item to take in a collection such that the total weight is less than the capacity and the total value is maximized.
+
+###IMPORTANT TO REMEMBER
+The 0-1 Knapsack problem involves making a choice: either you choose to take an item or you don’t. A "0" means you don't take the item, and a "1" means you do take it. If we understand that one item can be selected while another can be declined, we can apply the 0-1 Knapsack algorithm to make these decisions.
+
+A knapsack is a bag where we can place items, but it has a limited capacity, meaning it can't hold an infinite number of items. The goal is to fill it as efficiently as possible without exceeding its weight limit.
+
