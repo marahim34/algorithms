@@ -7,31 +7,25 @@ int dp[maxN][maxW];
 
 int knapsack(int n, int weight[], int value[], int W)
 {
-    if (n < 0 || W == 0)
+    if (n == 0 || W == 0)
         return 0;
 
-    if (dp[n][W] == -1)
+    if (dp[n][W] != -1)
     {
         return dp[n][W];
     }
 
-    if (weight[n] <= W)
+    if (weight[n - 1] <= W)
     {
-        // Two options: either we have to take it or consider it without taking it
-        // দুটি বিকল্প: হয় নিয়ে দেখতে হবে বা না নিয়ে দেখতে হবে
-        int opt1 = knapsack(n - 1, weight, value, W - weight[n]) + value[n];
-        int opt2 = knapsack(n - 1, weight, value, W);
-
-        return dp[n][W] = max(opt1, opt2);
+        int op1 = knapsack(n - 1, weight, value, W - weight[n - 1]) + value[n - 1];
+        int op2 = knapsack(n - 1, weight, value, W);
+        return dp[n][W] = max(op1, op2);
     }
+
     else
     {
-        // One option
-        // We have to consider it without taking it
-        // একটি বিকল্প
-        // না নিয়ে দেখতে হবে
-        int opt2 = knapsack(n - 1, weight, value, W);
-        return opt2;
+        int op2 = knapsack(n - 1, weight, value, W);
+        return dp[n][W] = op2;
     }
 }
 
@@ -55,15 +49,15 @@ int main()
     int W;
     cin >> W;
 
-    for (int i = 0; i < n; i++)
+    for (int i = 0; i <= n; i++)
     {
-        for (int j = 0; j < n; j++)
+        for (int j = 0; j <= W; j++)
         {
             dp[i][j] = -1;
         }
     }
 
-    cout << knapsack(n - 1, weight, value, W);
+    cout << knapsack(n, weight, value, W) << endl;
 
     return 0;
 }
